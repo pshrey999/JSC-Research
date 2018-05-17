@@ -1,17 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!--Created a basic template for this page!-->
-    <title>Contact Us</title>
-    <style> 
-        body {
-            background-color: palegreen;
-        }
-    </style>
+<title>Contact Us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121;
+}
+
+h2 {
+	color: orange;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 650px; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
 </head>
-    <body>
-        <h1 style="background-color: fuchsia;">Basic HTML document to edit for the corrosponding page!</h1>
-        <p></p>
-        <footer>Copyright&copy;2018 JSC Research</footer>
-    </body>
+<body>
+
+<div class="header">
+  <h2>Contact all of us here:</h2>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">Jacob</div>
+  <div class="column" style="background-color:#bbb;">Caleb</div>
+  <div class="column" style="background-color:#ccc;">Shrey</div>
+</div>
+
+<div class="footer">
+  <p>Copyright&copy;2018 JSC Research</p>
+</div>
+
+</body>
 </html>
